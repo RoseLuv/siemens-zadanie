@@ -51,11 +51,15 @@ bool Digit::subDigit(Digit digitToSub) {
         return false;
     }
 
-    if(digitToSub.digit > this-> digit) {
+    if(digitToSub.digit > this->digit) {
         this->digit = digitToSub.digit - this->digit;
         return false;
+    } 
+    if(digitToSub.digit == this->digit) {
+        this->digit = 0;
+        return false;
     }
-    this->digit -= 10 + digitToSub.digit;
+    this->digit = 10 + digitToSub.digit - this->digit;
     return true;
 }
 

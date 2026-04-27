@@ -27,7 +27,7 @@ int main() {
         toAddNumber.genNumber();
     }
     */
-    for(int i = 0; i < 5;i++) {
+    for(int i = 0; i < 50;i++) {
         toAddNumber.genNumber();
         std::cout << "To add number:       ";
         toAddNumber.printNumber();
